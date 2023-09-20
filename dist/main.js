@@ -16,17 +16,17 @@
   \***************************/
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
-eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpack_require__.d(__webpack_exports__, {\n/* harmony export */   capitalize: () => (/* binding */ capitalize)\n/* harmony export */ });\nfunction capitalize(string) {\r\n  string.split(\"\");\r\n  string[0].toUpperCase();\r\n  return string.join(\"\");\r\n}\r\n\n\n//# sourceURL=webpack://project-testing-practice/./src/capitalize.js?");
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpack_require__.d(__webpack_exports__, {\n/* harmony export */   capitalize: () => (/* binding */ capitalize)\n/* harmony export */ });\nfunction capitalize(string) {\r\n  const stringArray = string.split(\"\");\r\n  stringArray[0] = stringArray[0].toUpperCase();\r\n  return stringArray.join(\"\");\r\n}\r\n\n\n//# sourceURL=webpack://project-testing-practice/./src/capitalize.js?");
 
 /***/ }),
 
-/***/ "./src/index.js":
-/*!**********************!*\
-  !*** ./src/index.js ***!
-  \**********************/
+/***/ "./src/test.js":
+/*!*********************!*\
+  !*** ./src/test.js ***!
+  \*********************/
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
-eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var _capitalize_js__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./capitalize.js */ \"./src/capitalize.js\");\n\r\n\r\ntest(\"Capitalize fist letter\", () => {\r\n  expect((0,_capitalize_js__WEBPACK_IMPORTED_MODULE_0__.capitalize)(\"hello\")).toBe(\"Hello\");\r\n});\r\n\n\n//# sourceURL=webpack://project-testing-practice/./src/index.js?");
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var _capitalize_js__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./capitalize.js */ \"./src/capitalize.js\");\n\r\n\r\ntest(\"Capitalize fist letter\", () => {\r\n  expect((0,_capitalize_js__WEBPACK_IMPORTED_MODULE_0__.capitalize)(\"hello\")).toBe(\"Hello\");\r\n});\r\n\n\n//# sourceURL=webpack://project-testing-practice/./src/test.js?");
 
 /***/ })
 
@@ -90,7 +90,7 @@ eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var _cap
 /******/ 	// startup
 /******/ 	// Load entry module and return exports
 /******/ 	// This entry module can't be inlined because the eval devtool is used.
-/******/ 	var __webpack_exports__ = __webpack_require__("./src/index.js");
+/******/ 	var __webpack_exports__ = __webpack_require__("./src/test.js");
 /******/ 	
 /******/ })()
 ;
